@@ -1660,6 +1660,7 @@ input, select, textarea {
   margin: 0 auto;
 }
 
+/* Projects Section */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1725,4 +1726,13 @@ input, select, textarea {
 .links a:hover {
   border-color: #00d4ff;
   color: #00d4ff;
+}
+
+.profile-image img {
+ display: block;
+ margin: 0 auto 20px auto;
+ width: 200px;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 50%;
 }
