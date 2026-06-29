@@ -1744,3 +1744,10 @@ input, select, textarea {
     border-radius: 8px;
     margin-bottom: 16px;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+}
