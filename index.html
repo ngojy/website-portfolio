@@ -1,153 +1,146 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Jeremy Ngo's website</title>
+		<title>Jeremy Ngo - Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
+					<h1><strong>Jeremy Ngo</strong><br />
+					Aspiring Machine Learning Engineer<br />
+					Kennesaw State University<br />
+					Department of Computer Science<br />
+					Concentration in Artificial Intelligence<br />
+					</strong></h1>
+					</h1>
+				</div>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="content">
-							<div class="inner">
-								<h1>Jeremy Ngo</h1>
-								<p>Aspiring Machine Learning / Computer Vision Engineer</p>
-								<p>KSU New Graduate, Department of Computer Science, Concentration in Artificial Intelligence</p>
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Welcome to my portfolio!</h2>
+						</header>
+						<p>Hi, my name is Jeremy! I'm a passionate Machine Learning Engineer with a strong interest in creating innovative solutions that make a difference.
+							Feel free to explore my work and get in touch if you have any questions or opportunities!
+						</p>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/prompt_injection.png" class="image fit thumb"><img src="images/prompt_injection.png" alt="" /></a>
+								<h3>Detecting and Mitigating Large Language Model Prompt Injections</h3>
+								<h5>Cybersecurity Research Project<br />
+								Jan 2026 - May 2026</h5>
+								<p>Built a prompt injection detection system that benchmarks 6 classification approaches 
+									(Shannon Entropy, KL Divergence, Naive Bayes, Sentence Embeddings, Early Fusion, and Late Fusion) across ~6,000 samples. 
+									An early fusion model combining all methods topped the leaderboard with 99.36% AUC-ROC and 95.18% weighted F1.</p>
+								<div class="links">
+									<a href="https://github.com/ngojy/prompt-injection-detection" target="_blank">GitHub</a>
+									<a href="papers/IEEE-Paper.pdf" target="_blank">IEEE Paper</a>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Seoulutions</h3>
+								<h5>Mobile App for Exchange Students<br />
+								Sep 2025 - Dec 2025</h5>
+								<p>Built a production-ready mobile app helping exchange students navigate life in South Korea. 
+									Integrated Gemini AI for personality-driven recommendations, Kakao Maps for real-time transit routing, 
+									and Firebase for authentication and live data sync, onboarding 15+ beta users across a 6-person team.</p>
+								<div class="links">
+									<a href="https://seoulution-project.vercel.app/" target="_blank">Vercel</a>
+									<a href="" target="_blank">Demo</a>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fake_news.png" class="image fit thumb"><img src="images/fake_news.png" alt="" /></a>
+								<h3>Fake News Detection</h3>
+								<h5>Media Project<br />
+								Apr 2025 - Apr 2025</h5>
+								<p>Built a fake news detection system using logistic regression. 
+									The system analyzes news articles to identify and flag potentially false or misleading information, 
+									helping to combat the spread of misinformation.</p>	
+								<div class="links">
+									<a href="https://github.com/ngojy/Fake-News-Detection" target="_blank">GitHub</a>
+									<a href="https://fake-news-detection-bsteqysutwzefna8qs3pt4.streamlit.app/" target="_blank">Streamlit</a>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Brain Atrophy Analysis Detection</h3>
+								<h5>Medical Research Project<br />
+								Mar 2025 - Apr 2025</h5>
+								<p>Built a brain atrophy analysis detection system using deep learning techniques. 
+									The system analyzes medical images to identify and quantify brain atrophy, 
+									providing valuable insights for early diagnosis and treatment planning for Alzhiemer's Disease.</p>
+								<div class="links">
+									<a href="https://github.com/ngojy/Brain-Atrophy-Analysis-Detection" target="_blank">GitHub</a>
+								</div>
+							</article>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Have a question or want to work together? Feel free to reach out!</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										Atlanta, GA<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">jeremy.ngo.business@gmail.com</a>
+									</li>
+								</ul>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="profile-image"><img src="images/pfp.jpg" alt="Jeremy Ngo"/></span>
-								<p>Welcome to my portfolio!</p>
-								<p>Hi, my name is Jeremy, and I'm a passionate ML/CV engineer with a strong interest in creating innovative solutions that make a difference.</p>
-								<p>Feel free to explore my work and get in touch if you have any questions or opportunities!</p>
-							</article>
-
-						<!-- Projects -->
-							<article id="projects">
-								<h2 class="major">Projects</h2>
-								<div class="project-grid">
-
-								<!-- Project 1 -->
-								<div class="project-card">
-									<h3>Detecting and Mitigating Large Language Model Prompt Injections</h3>
-									<h4>Cybersecurity Research Project</h4>
-									<h5>Jan 2026 - May 2026</h5>
-									<img class="project-img" src="images/p1image.jpg" alt="Project 1"/>
-									<p>Built a prompt injection detection system that benchmarks 6 classification approaches — including Shannon Entropy, KL Divergence, Naive Bayes, and sentence embeddings — across ~6,000 samples. An early fusion model combining all methods topped the leaderboard with 99.36% AUC-ROC and 95.18% weighted F1.</p>
-									<div class="tags">
-										<span>Python</span>
-										<span>NLP</span>
-										<span>Sentence Transformers</span>
-										<span>Cybersecurity</span>
-									</div>
-									<div class="links">
-										<a href="https://github.com/ngojy/prompt-injection-detection" target="_blank">GitHub</a>
-										<a href="papers/IEEE-Paper.pdf" target="_blank">IEEE Paper</a>
-									</div>
-								</div>
-
-								<!-- Project 2 -->
-								<div class="project-card">
-									<h3>Seoulutions</h3>
-									<h4>Mobile App for Exchange Students</h4>
-									<h5>Sep 2025 - Dec 2025</h5>
-									<p>Built a production-ready mobile app helping exchange students navigate life in South Korea. Integrated Gemini AI for personality-driven recommendations, Kakao Maps for real-time transit routing, and Firebase for authentication and live data sync — onboarding 15+ beta users across a 6-person team.</p>
-									<div class="tags">
-										<span>React Native</span>
-										<span>Google Gemini API</span>
-										<span>Firebase</span>
-										<span>Vercel</span>
-										<span>Kakao Maps API</span>
-									</div>
-									<div class="links">
-										<a href="https://seoulution-project.vercel.app/" target="_blank">Vercel</a>
-										<a href="" target="_blank">Demo Video</a>
-									</div>
-								</div>
-
-								<!-- Project 3 -->
-								<div class="project-card">
-									<h3>Fake News Detection</h3>
-									<h4>Media Project</h4>
-									<h5>Apr 2025 - Apr 2025</h5>
-									<p>Built a fake news detection system using logistic regression. The system analyzes news articles to identify and flag potentially false or misleading information, helping to combat the spread of misinformation.</p>
-									<div class="tags">
-										<span>PyTorch</span>
-										<span>NLP</span>
-										<span>Text Classification</span>
-										<span>Streamlit</span>
-									</div>
-									<div class="links">
-										<a href="https://fake-news-detection-bsteqysutwzefna8qs3pt4.streamlit.app/" target="_blank">Streamlit</a>
-										<a href="https://github.com/ngojy/Fake-News-Detection" target="_blank">GitHub</a>
-									</div>
-								</div>
-
-								<!-- Project 4 -->
-								<div class="project-card">
-									<h3>Brain Atrophy Analysis Detection</h3>
-									<h4>Medical Research Project</h4>
-									<h5>Mar 2025 - Apr 2025</h5>
-									<p>Built a brain atrophy analysis detection system using deep learning techniques. The system analyzes medical images to identify and quantify brain atrophy, providing valuable insights for early diagnosis and treatment planning for Alzhiemer's Disease.</p>
-									<div class="tags">
-										<span>PyTorch</span>
-										<span>Computer Vision</span>
-										<span>Medical Imaging</span>
-										<span>Deep Learning</span>
-										<span>ADNI Database</span>
-									</div>
-									<div class="links">
-										<a href="https://github.com/ngojy/Brain-Atrophy-Analysis-Detection" target="_blank">GitHub</a>
-									</div>
-								</div>
-
-								</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p>Feel free to reach out to me through any of the platforms below!</p>
-								<p>You can also email me at <a href="mailto:jeremy.ngo.business@gmail.com">jeremy.ngo.business@gmail.com</a>.</p>
-								<ul class="icons">
-									<li><a href="https://linkedin.com/in/jeremyhngo" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/ngojy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; 2026 Jeremy Ngo Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
+					</section>
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://linkedin.com/in/jeremyhngo" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/jeremyhngo" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+				</div>
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
