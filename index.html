@@ -14,8 +14,8 @@
 					<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
 					<h1><strong>Jeremy Ngo</strong><br />
 					Aspiring Machine Learning Engineer<br />
-					Kennesaw State University<br />
-					Department of Computer Science<br />
+					Kennesaw State University Alumni<br />
+					Major in Computer Science<br />
 					Concentration in Artificial Intelligence<br />
 					</strong></h1>
 					</h1>
@@ -38,10 +38,10 @@
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Recent Work</h2>
+						<h2>Recent Projects</h2>
 						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/prompt_injection.png" class="image fit thumb"><img src="images/prompt_injection.png" alt="" /></a>
+							<article class="col-12 col-12-xsmall work-item">
+								<img src="images/prompt_injection.png" class="image fit thumb" alt="" />
 								<h3>Detecting and Mitigating Large Language Model Prompt Injections</h3>
 								<h5>Cybersecurity Research Project<br />
 								Jan 2026 - May 2026</h5>
@@ -53,8 +53,18 @@
 									<a href="papers/IEEE-Paper.pdf" target="_blank">IEEE Paper</a>
 								</div>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/seoulutions.png" class="image fit thumb"><img src="images/seoulutions.png" alt="" /></a>
+							<article class="col-12 col-12-xsmall work-item">
+								<div class="carousel image fit thumb">
+    								<div class="carousel-track">
+        								<img src="images/seoulution-proj/seoulution-project-1.png" alt="Screenshot 1">
+        								<img src="images/seoulution-proj/seoulution-project-2.png" alt="Screenshot 2">
+        								<img src="images/seoulution-proj/seoulution-project-3.png" alt="Screenshot 3">
+										<img src="images/seoulution-proj/seoulution-project-4.png" alt="Screenshot 4">
+										<img src="images/seoulution-proj/seoulution-project-5.png" alt="Screenshot 5">
+    								</div>
+    								<button class="carousel-btn prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+    								<button class="carousel-btn next" onclick="moveCarousel(this, 1)">&#8250;</button>
+								</div>
 								<h3>Seoulutions</h3>
 								<h5>Mobile App for Exchange Students<br />
 								Sep 2025 - Dec 2025</h5>
@@ -66,8 +76,8 @@
 									<a href="" target="_blank">Demo</a>
 								</div>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fake_news.png" class="image fit thumb"><img src="images/fake_news.png" alt="" /></a>
+							<article class="col-12 col-12-xsmall work-item">
+								<img src="images/fake_news.png" class="image fit thumb" alt="" />
 								<h3>Fake News Detection</h3>
 								<h5>Media Project<br />
 								Apr 2025 - Apr 2025</h5>
@@ -79,8 +89,8 @@
 									<a href="https://fake-news-detection-bsteqysutwzefna8qs3pt4.streamlit.app/" target="_blank">Streamlit</a>
 								</div>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<article class="col-12 col-12-xsmall work-item">
+								<img src="images/" class="image fit thumb" alt="" />
 								<h3>Brain Atrophy Analysis Detection</h3>
 								<h5>Medical Research Project<br />
 								Mar 2025 - Apr 2025</h5>
@@ -109,6 +119,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+    			function moveCarousel(btn, direction) {
+        			const track = btn.parentElement.querySelector('.carousel-track');
+        			const imgs = track.querySelectorAll('img');
+        			let current = parseInt(track.dataset.current || 0);
+        			current = (current + direction + imgs.length) % imgs.length;
+        			track.dataset.current = current;
+        			track.style.transform = `translateX(-${current * 100}%)`;
+    			}
+			</script>
 	</body>
 </html>

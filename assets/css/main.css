@@ -2065,39 +2065,6 @@ input, select, textarea {
 			text-align: center;
 		}
 
-			.image.thumb:after {
-				-moz-transition: opacity 0.2s ease-in-out;
-				-webkit-transition: opacity 0.2s ease-in-out;
-				-ms-transition: opacity 0.2s ease-in-out;
-				transition: opacity 0.2s ease-in-out;
-				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
-				content: 'View';
-				display: inline-block;
-				font-size: 0.8em;
-				font-weight: 400;
-				left: 50%;
-				line-height: 2.25em;
-				margin: -1.25em 0 0 -3em;
-				opacity: 0;
-				padding: 0 1.5em;
-				position: absolute;
-				text-align: center;
-				text-decoration: none;
-				top: 50%;
-				white-space: nowrap;
-			}
-
-			.image.thumb:hover:after {
-				opacity: 1.0;
-			}
-
-			.image.thumb:hover:before {
-				background: url("images/A6701490.JPG"), url("images/A6701490.JPG");
-				opacity: 1.0;
-			}
-
 		.image img {
 			border-radius: 0.35em;
 			display: block;
@@ -3219,3 +3186,40 @@ input, select, textarea {
 			}
 
 	}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.35em;
+    margin: 0 0 2em 0;
+    width: 100%;
+    display: block;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-track img {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.carousel-btn.prev { left: 8px; }
+.carousel-btn.next { right: 8px; }
