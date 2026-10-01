@@ -1,0 +1,41 @@
+:root{--bg:#eef1f6;--ink:#14213d;--muted:#4a5875;--accent:#2f6fed;--white:#fff;--ph:#dbe3f3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626}}
+:root[data-theme="dark"]{--bg:#0f1626}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 "Source Serif 4",Georgia,serif}
+
+/* Every block is full width with its own background (white until you add an image) */
+.block{background-color:var(--white);background-size:cover;background-position:center;color:var(--ink)}
+.inner{max-width:820px;margin:0 auto;padding:0 20px}
+
+#hero{text-align:center;padding:56px 0 40px;border-bottom:3px solid var(--ink)}
+.avatar{width:120px;height:120px;border-radius:50%;border:3px solid var(--ink);margin:0 auto 16px;background:var(--ph);display:grid;place-items:center;font:800 44px "Bricolage Grotesque",system-ui,sans-serif;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+h1{font:800 clamp(2rem,6vw,3rem)/1.1 "Bricolage Grotesque",system-ui,sans-serif;margin:0}
+.role{margin:6px 0 0;color:var(--muted);font-size:1.1rem}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--white);display:flex;justify-content:center;gap:24px;padding:12px 0;border-bottom:3px solid var(--ink);z-index:1}
+nav a{color:var(--ink);font:500 1rem "Bricolage Grotesque",system-ui,sans-serif;text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+section.block{padding:8px 0 48px;border-bottom:3px solid var(--ink);scroll-margin-top:56px}
+h2{font:800 1.6rem "Bricolage Grotesque",system-ui,sans-serif;text-align:center;margin:36px 0 24px}
+.about p,.contact p{max-width:68ch;margin:0 auto 12px;text-align:center}
+.project{background:var(--white);border:3px solid var(--ink);padding:24px;margin-bottom:28px}
+.project h3{font:800 1.4rem "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 14px}
+.shot{border:3px solid var(--ink);aspect-ratio:16/8;background:var(--ph);display:grid;place-items:center;color:var(--muted);overflow:hidden;margin-bottom:16px}
+.shot img{width:100%;height:100%;object-fit:cover}
+.project p{margin:0 0 12px;max-width:68ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{border:2px solid var(--ink);background:var(--white);padding:2px 10px;font-size:.9rem}
+.skills{max-width:68ch;margin:0 auto;justify-content:center}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* Banner image continues behind the tabs and About section (blurred there) */
+.page{position:relative;isolation:isolate}
+#topbg{position:absolute;top:0;left:0;right:0;height:60vh;z-index:-1;background-size:cover;background-position:center top}
+#hero,#about{background-color:transparent;background-image:none}
+nav,#about{background-color:rgba(255,255,255,.45);-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px)} /* lower .45 to show more image, change 14px for more or less blur */
