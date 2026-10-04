@@ -34,8 +34,8 @@ h2{font:800 1.6rem "Bricolage Grotesque",system-ui,sans-serif;text-align:center;
 a{color:var(--accent)}
 a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 
-/* Banner image continues behind the tabs and About section (blurred there) */
+/* Banner image stays fixed behind the page and shows blurred through the tabs and every section */
 .page{position:relative;isolation:isolate}
-#topbg{position:absolute;top:0;left:0;right:0;height:60vh;z-index:-1;background-size:cover;background-position:center top}
+#topbg{position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;background-size:cover;background-position:center}
 #hero,#about{background-color:transparent;background-image:none}
-nav,#about{background-color:rgba(255,255,255,.45);-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px)} /* lower .45 to show more image, change 14px for more or less blur */
+nav,section.block{background-color:rgba(255,255,255,.45);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)} /* lower .45 to show more image, change 14px for more or less blur */
